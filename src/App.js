@@ -50,12 +50,12 @@ function App() {
     <div className="App">
       <div className="App-header">
         <Title>WebRTC</Title>
-        <Paragraph>
+        {/* <Paragraph style={{ width: "80%" }}>
           This is a simple demo app that demonstrates how to build a WebRTC
           application from scratch, including a signaling server. It serves as a
           step-by-step guide to help you understand the process of implementing
           WebRTC in your own projects.
-        </Paragraph>
+        </Paragraph> */}
         <div
           className="wrapper-row"
           style={{ justifyContent: "space-evenly", width: "50%" }}
@@ -64,11 +64,11 @@ function App() {
           {renderTextarea()}
         </div>
         <div className="playerContainer" id="playerContainer">
-          <video id="peerPlayer" autoPlay style={{ width: 640, height: 480 }} />
+          <video id="peerPlayer" autoPlay style={{ width: 480, height: 320 }} />
           <video
             id="localPlayer"
             autoPlay
-            style={{ width: 640, height: 480 }}
+            style={{ width: 480, height: 320 }}
           />
         </div>
       </div>
